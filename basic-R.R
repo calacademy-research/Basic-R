@@ -6,7 +6,7 @@
 #' R scripts are text files containing sets of commands and comments. 
 #' Commands are instructions we ask R to follow. R follows those instructions by executing or *running* those commands.
 #' Comments are text that R does not run as commands; these are meant for humans to keep track of information and details about the commands themselves. 
-#' Comments are written with one or more # symbols. As we will see later, the ' after the # is not required but, has additional advantages.
+#' Comments are written with one or more # symbols. As we will see later, the ' after the # is not required but, has additional advantages (see 'compile report' below).
 #' Scripts can be saved and used later to re-execute the saved commands and repeat potentially very large and complex sets of operations. 
 #' Scripts can be edited and expanded to execute modified versions of the commands. 
 #' Commands within scripts are executed in a sequence from top to bottom. 
@@ -263,9 +263,8 @@ help(package = "dplyr")
 #' **THE POWER of R^2^**
 #' 
 #' By now, you should be convinced that R is worth your time.
-#' But what is even more incredible about R is that many people have begun to build whole new 'languages' of programming on top of R.
-#' The most advanced is R-studio.
-#' R-studio is an integrated development environment (IDE) built on top of R.
+#' But what is even more incredible about R is that many people have begun to build packages that employ new programming paradigms.
+#' Their is even an highly advanced integrated development environment (IDE) built to harness R.
 #' You can learn about it here:
 browseURL("https://www.rstudio.com")
 #' Don't let the .com domain scare you away, the packages are open source and the tools are 'free'
@@ -274,20 +273,34 @@ browseURL("https://www.rstudio.com")
 #'Three of the main benefits are:
 #' 1. Using the R-studio IDE for programming with R, works for individuals or groups,
 #' integrates code repositories like GitHub
-#' 2. Amazing R Packages that have become state-of-the-art.
-#' See e.g. ggplot2() for amazing plots or tidyr() for a whole new (and fast) way to work with data
+#' 2. Amazing R Packages that have become state-of-the-art:
+#' See e.g. ggplot2 
+browseURL("https://ggplot2.tidyverse.org")
+#' for amazing plots or tidyr 
+browseURL("https://tidyr.tidyverse.org")
+#' for a whole new (and fast) way to work with data
 #' including data frames on steroids called 'tibbles'.
 #' 3. Ease of publishing dynamic web applications integrating data, text and graphics Shiny()!
 #' See more on these advanced, new environments built to do more on top of R!
 browseURL("https://www.rstudio.com/products/rstudio/")
 #'
+#' Finally, the pesky ' after the # (in other words #') allow us to compile this script to be human readable.
+#' So try out the following commands (copy and paste them to the terminal, why don't I want them to be active here *extra credit*):
+#' 
+#' >install.packages("rmarkdown")
+#' 
+#' >library(rmarkdown)
+#' 
+#' >rmarkdown::render("Basic-R.R", "html_document")
+#' 
+#' Now the file "Basic-R.html" should be in your working directory.  Open it in your browser and check it out!
 #' There is much, much, much more to explore about R; we are just getting started!
 #' Thanks for reading!
 #' 
 #' Durrell D. Kapan and Giovanni Rapacciuolo,
 #' Institute for Biodiversity Science and Sustainability,
 #' California Academy of Sciences,
-#' (2019-2020).
+#' (2019-2020-2022).
 #' 
 #' CC license: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 #' 
