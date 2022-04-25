@@ -130,7 +130,7 @@ mydataframe
 mydataframe[1, ] 
 #' returns the first ROW of mydataframe; rows are BEFORE the comma.
 mydataframe[, 1] 
-#' returns the first COLUMN of mydataframe; columns are BEFORE the comma.
+#' returns the first COLUMN of mydataframe; columns are AFTER the comma.
 mydataframe[1, 1] 
 #' returns the value on the first row in the first column
 #' 
